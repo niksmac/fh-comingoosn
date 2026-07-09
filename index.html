@@ -140,12 +140,18 @@
               class="notify"
               name="notify"
               method="POST"
-              netlify>
+              action="/success"
+              netlify
+              data-netlify-honeypot="roast-level">
               <label
                 for="email"
                 class="sr-only"
                 >Email address</label
               >
+              <p class="honeypot" hidden aria-hidden="true">
+                <label for="roast-level">Preferred roast level</label>
+                <input id="roast-level" name="roast-level" tabindex="-1" autocomplete="off" />
+              </p>
               <input
                 type="email"
                 name="email"
