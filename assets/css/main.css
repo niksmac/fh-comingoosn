@@ -32,8 +32,14 @@ body {
   inset: 0;
   background-color: #2d251e;
   background-image: url('../img/coffee-beans-texture.jpg');
+  background-image: image-set(
+    url('../img/coffee-beans-texture.avif') type('image/avif') 1x,
+    url('../img/coffee-beans-texture.webp') type('image/webp') 1x,
+    url('../img/coffee-beans-texture.jpg') type('image/jpeg') 1x
+  );
   background-size: cover;
   background-position: center 30%;
+  will-change: transform;
   animation: slow-zoom 30s ease-in-out infinite alternate;
 }
 
