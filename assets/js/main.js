@@ -2,8 +2,7 @@
   function pad(n) {
     return String(n).padStart(2, '0')
   }
-  const launch = new Date()
-  launch.setDate(launch.getDate() + 30)
+  const launch = new Date('2026-07-30T00:00:00')
 
   function update() {
     const now = new Date()
